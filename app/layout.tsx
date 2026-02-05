@@ -8,7 +8,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Zahava klaus",
+  title: "Zahava kallus",
   icons: "/zahava.svg",
   description:
     "I’m Zahava, a fourth year visual communication student at Bezalel Academy of Art and Design. My work draws from history, nature, and architecture, and I enjoy building ideas through research, observation, and hands-on exploration. I discovered visual communication at seventeen in a high school graphic design course, and that early curiosity still shapes the kind of work I’m drawn to today.",
