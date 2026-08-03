@@ -2,6 +2,14 @@ export type Asset = {
   type: "image" | "video";
   src: string | string[];
   info?: boolean;
+  /** Keep UI mockups sharp — skip heavy Next.js compression */
+  crisp?: boolean;
+  /** Optional art-directed crops for the project hero */
+  srcResponsive?: {
+    phone: string;
+    tablet: string;
+    desktop: string;
+  };
   description?: {
     title: string;
     paragraph: string;
@@ -37,6 +45,11 @@ const projectsData: Project[] = [
       {
         type: "image",
         src: "/1-cactus ux/1.webp",
+        srcResponsive: {
+          phone: "/1-cactus%20ux/1-phone.webp",
+          tablet: "/1-cactus%20ux/1-tablet.webp",
+          desktop: "/1-cactus%20ux/1-desktop.webp",
+        },
         info: true,
         description: {
           title: "Cactus ux ui",
@@ -46,12 +59,32 @@ const projectsData: Project[] = [
       },
       {
         type: "image",
+        src: "/2-cactus brand/2.webp",
+        description: {
+          title: "The Inspiration",
+          paragraph: `
+The inspiration behind Cactus comes from the spirit of the American road, wide skies, winding highways, and the promise of discovery around every turn. It draws from the nostalgia of Route 66 signs, vintage motels, and desert landscapes that evoke both adventure and comfort. Just like these timeless journeys, Cactus encourages families to slow down, explore, and learn together along the way, turning travel into a shared experience of curiosity and growth.
+          `,
+        },
+      },
+      {
+        type: "image",
+        src: "/2-cactus brand/3.webp",
+        description: {
+          title: "Our Logo",
+          paragraph: `
+The Cactus logo is based on the iconic Route 66 shield, a symbol of freedom and the open road. The unique silhouette of the sign is combined with a cactus to reflect curiosity, exploration, and learning on the move. It captures what our app is all about: helping families turn every journey into an educational adventure.
+`,
+        },
+      },
+      {
+        type: "image",
         src: "/1-cactus ux/2.webp",
         description: {
           title: "Home Page",
           paragraph: `
 The Home Page provides a clear overview of the app’s main features. Users can explore featured adventures and suggested routes, view top educational destinations, and access personalized itineraries and upcoming trips for continued planning. The navigation bar offers direct access to key sections, ensuring smooth transitions between discovery, saved routes, and profile settings.
-          `,
+`,
         },
       },
       {
@@ -77,18 +110,9 @@ The itineraries section organizes trips into active, upcoming, and past journeys
         },
       },
       {
-        type: "video",
-        src: "/1-cactus ux/5.mp4",
-        description: {
-          title: "Chosen Itinerary",
-          paragraph: `
-Cactus presents the selected route in a clear, day by day layout, highlighting each learning theme and activity along the way. Families can open individual days for details, view locations on the interactive map, and adjust the plan as needed. This screen brings the itinerary to life, making it easy to understand the journey at a glance and explore each stop with confidence.
-`,
-        },
-      },
-      {
-        type: "video",
-        src: "/1-cactus ux/6.mp4",
+        type: "image",
+        src: "/1-cactus ux/7.webp",
+        crisp: true,
       },
     ],
   },

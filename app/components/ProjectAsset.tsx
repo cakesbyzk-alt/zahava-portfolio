@@ -34,10 +34,22 @@ export default function ProjectAsset({
       ) : (
         <Image
           alt={altText}
-          className="w-full"
+          className="h-auto w-full"
           src={asset.src}
-          width={1920}
-          height={1080}
+          width={asset.crisp ? 3000 : 1920}
+          height={asset.crisp ? 1679 : 1080}
+          quality={100}
+          sizes="100vw"
+          unoptimized={asset.crisp}
+          style={
+            asset.crisp
+              ? {
+                  imageRendering: "-webkit-optimize-contrast",
+                  width: "100%",
+                  height: "auto",
+                }
+              : undefined
+          }
         />
       )}
       {asset.description && (

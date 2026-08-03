@@ -1,8 +1,5 @@
 import projectsData from "@/projectsData";
 import Link from "next/link";
-import largeImg from "../assets/home.gif";
-import mediumImg from "../assets/home-tablet.gif";
-import smalImg from "../assets/home-phone.gif";
 export default function Home() {
   const projectLinks = projectsData.map(project => {
     return (
@@ -14,29 +11,46 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden font-medium">
       <header className="mb-8 lg:mb-12">
-        <picture className="flex justify-center px-4 md:px-15 lg:px-20">
-          <source
-            srcSet={largeImg.src}
-            media="(width >= 1280px)"
-            width={1150}
-            height={645}
+        <div className="hidden justify-center px-4 md:px-15 lg:flex lg:px-10">
+          <video
+            className="h-auto w-full max-w-[1400px]"
+            style={{ clipPath: "inset(0 0 3px 0)" }}
+            src="/home-desktop.mp4"
+            width={1920}
+            height={1080}
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-hidden="true"
           />
-          <source
-            srcSet={mediumImg.src}
-            media="(width >= 800px)"
-            width={650}
-            height={750}
+        </div>
+        <div className="hidden justify-center px-4 md:flex lg:hidden md:px-15">
+          <video
+            className="h-auto w-full max-w-[650px]"
+            src="/home-tablet.mp4"
+            width={800}
+            height={916}
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-hidden="true"
           />
-          <img
-            className="h-auto max-w-[450px] md:max-w-[650px] lg:max-w-[1150px]"
-            style={{ clipPath: "inset(0 0 2px 0)" }}
-            fetchPriority="high"
-            src={smalImg.src}
-            width={450}
-            height={950}
-            alt=""
+        </div>
+        <div className="flex justify-center px-4 md:hidden">
+          <video
+            className="h-auto w-full max-w-[450px]"
+            src="/home-phone.mp4"
+            width={1080}
+            height={1920}
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-hidden="true"
           />
-        </picture>
+        </div>
         <h1 className="z-10 text-center text-base leading-tight font-semibold md:text-[32px] lg:text-[37px]">
           <span className="block">Hi!</span>
           I’m Zahava Kallus, and this is my work

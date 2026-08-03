@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3030",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3030",
     "lint": "eslint"
   },
   "dependencies": {
@@ -25,5 +25,8 @@
     "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "optionalDependencies": {
+    "@img/sharp-darwin-arm64": "^0.35.3"
   }
 }

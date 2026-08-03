@@ -22,16 +22,45 @@ export default function InfoVisual({
       </li>
     );
   });
+
+  const responsive = asset.srcResponsive;
+
   return (
     <div>
-      <Image
-        alt={altText}
-        src={asset.src as string}
-        width={1920}
-        height={1080}
-        className="w-full"
-        priority
-      />
+      {responsive ? (
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcSet={responsive.desktop}
+            width={3000}
+            height={1684}
+          />
+          <source
+            media="(min-width: 800px)"
+            srcSet={responsive.tablet}
+            width={2000}
+            height={1481}
+          />
+          {/* Native img so <picture> art direction is not overridden by next/image */}
+          <img
+            alt={altText}
+            src={responsive.phone}
+            width={1400}
+            height={1400}
+            className="h-auto w-full"
+            fetchPriority="high"
+          />
+        </picture>
+      ) : (
+        <Image
+          alt={altText}
+          src={asset.src as string}
+          width={1920}
+          height={1080}
+          className="h-auto w-full"
+          priority
+        />
+      )}
       <ul className="flex flex-col flex-wrap justify-between gap-4 py-5 pb-10 capitalize md:flex-row md:pb-22 lg:pb-26">
         {infoBoxes}
       </ul>
