@@ -59,7 +59,7 @@ const projectsData: Project[] = [
       },
       {
         type: "image",
-        src: "/2-cactus brand/2.webp",
+        src: "/1-cactus ux/inspiration.webp",
         description: {
           title: "The Inspiration",
           paragraph: `
@@ -69,7 +69,7 @@ The inspiration behind Cactus comes from the spirit of the American road, wide s
       },
       {
         type: "image",
-        src: "/2-cactus brand/3.webp",
+        src: "/1-cactus ux/logo.webp",
         description: {
           title: "Our Logo",
           paragraph: `
@@ -117,97 +117,7 @@ The itineraries section organizes trips into active, upcoming, and past journeys
     ],
   },
   {
-    name: "Cactus Brand",
-    title: "02 / Cactus Brand  /Startup course  / 2024-2025",
-    info: {
-      course: "Startup, Ux Ui",
-      instructor: "Nomi Gelbach",
-      partner: "Elya Asulin",
-      skills: "Design System, Prototype",
-    },
-    assets: [
-      {
-        type: "image",
-        src: "/2-cactus brand/1.webp",
-        info: true,
-        description: {
-          title: "Cactus",
-          paragraph: `
-Cactus is an app for parents living on the road, helping turn travel into learning with educational stops across the U.S. museums, parks, and historic sites, through a simple, intuitive interface.
-`,
-        },
-      },
-      {
-        type: "image",
-        src: "/2-cactus brand/2.webp",
-        description: {
-          title: "The Inspiration",
-          paragraph: `
-The inspiration behind Cactus comes from the spirit of the American road, wide skies, winding highways, and the promise of discovery around every turn. It draws from the nostalgia of Route 66 signs, vintage motels, and desert landscapes that evoke both adventure and comfort. Just like these timeless journeys, Cactus encourages families to slow down, explore, and learn together along the way, turning travel into a shared experience of curiosity and growth.
-
-          `,
-        },
-      },
-      {
-        type: "image",
-        src: "/2-cactus brand/3.webp",
-        description: {
-          title: "Our Logo",
-          paragraph: `
-
-The Cactus logo is based on the iconic Route 66 shield, a symbol of freedom and the open road. The unique silhouette of the sign is combined with a cactus to reflect curiosity, exploration, and learning on the move. It captures what our app is all about: helping families turn every journey into an educational adventure.
-          `,
-        },
-      },
-      {
-        type: "image",
-        src: "/2-cactus brand/4.webp",
-        description: {
-          title: "Color palette",
-          paragraph: `
-The color palette is inspired by nature and the open road. The most prominante color is the blue brings a sense of space and freedom,  while warm gold, rust, and earth tones reflect the Western landscape. The colors feel natural, grounded, and welcoming, perfect for family adventures and hands-on discovery.
-`,
-        },
-      },
-      {
-        type: "image",
-        src: "/2-cactus brand/5.webp",
-        description: {
-          title: " Typography",
-          paragraph: `
-Our typography combines warmth with clarity. Job Clarendon adds a bold, Western charm that feels adventurous and familiar, while Open Sans keeps everything clean, simple, and easy to read. Together, they reflect the friendly, down to earth spirit of Cactus.
-
-          `,
-        },
-      },
-      {
-        type: "image",
-        src: "/2-cactus brand/6.webp",
-        description: {
-          title: "Image style",
-          paragraph: `
-Our image style highlights authentic family moments, surrounded by nature and the warmth of the open road. Sunlit deserts, winding highways, and real-life adventures evoke a sense of freedom and connection. Every photo invites you into a world where learning happens through experience, where the journey itself becomes the classroom.
-          `,
-        },
-      },
-      {
-        type: "image",
-        src: "/2-cactus brand/7.webp",
-        description: {
-          title: "Icons, Design, Copywrite",
-          paragraph: `
-          Cactus uses vintage highway inspired icons and shield shapes to capture the spirit of the open road. Friendly, bold typography keeps the design approachable, while playful copy like “Hit the Road” and “Grow with every mile!” sets an adventurous, family friendly tone. Together, the visuals and words create a style that feels intuitive, inviting, and full of discovery.
-`,
-        },
-      },
-      {
-        type: "video",
-        src: "/2-cactus brand/8.mp4",
-      },
-    ],
-  },
-  {
-    title: "03 / Open House Festival  / Branding course  / 2024-2025",
+    title: "02 / Open House Festival  / Branding course  / 2024-2025",
     name: "Open House Festival",
     info: {
       course: "Startup, Ux Ui, ",
@@ -297,7 +207,7 @@ The social media design carries the structured and architectural themes of the p
     ],
   },
   {
-    title: "04 / Wanderlust / Branding course  / 2024",
+    title: "03 / Wanderlust / Branding course  / 2024",
     name: "Wanderlust",
     info: {
       course: "Branding introduction",
@@ -389,7 +299,7 @@ Each lightbox uses layered cutouts and soft light to create depth within a small
   },
   {
     name: "Forest Guardian",
-    title: "05 / Forest Guardian  / Illustration course  / 2025",
+    title: "04 / Forest Guardian  / Illustration course  / 2025",
     info: {
       course: "Illustration and Innovation in the Industry",
       instructor: "Limor Snochemer",
@@ -463,7 +373,7 @@ Each lightbox uses layered cutouts and soft light to create depth within a small
     ],
   },
   {
-    title: "06 / The Eternal Israeli / Typography course  / 2024",
+    title: "05 / The Eternal Israeli / Typography course  / 2024",
     name: "The Eternal Israeli",
     info: {
       course: "Typography",
@@ -545,7 +455,7 @@ The last page places the final lines of the text in a wide field of negative spa
     ],
   },
   {
-    title: "07 / Illustration Gallery/ Illustration  / 2022- 2025",
+    title: "06 / Illustration Gallery/ Illustration  / 2022- 2025",
     name: "Illustration Gallery",
 
     assets: [
@@ -620,7 +530,7 @@ Two ink studies of crowded city life. One looks down at the packed parking lot b
     ],
   },
   {
-    title: "08 / Animation Gallery / Animation  / 2022- 2025",
+    title: "07 / Animation Gallery / Animation  / 2022- 2025",
     name: "Animation Gallery",
 
     assets: [
