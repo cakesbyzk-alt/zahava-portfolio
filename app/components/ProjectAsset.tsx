@@ -22,11 +22,12 @@ export default function ProjectAsset({
         <video
           className="w-full"
           src={asset.src}
-          loop
-          muted
+          playsInline
           autoPlay
-          aria-label={altText}
-          playsInline>
+          muted
+          loop
+          preload="auto"
+          aria-label={altText}>
           Your browser does not support the video tag.
         </video>
       ) : Boolean(asset.info && info) ? (
