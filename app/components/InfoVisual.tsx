@@ -32,21 +32,21 @@ export default function InfoVisual({
           <source
             media="(min-width: 1280px)"
             srcSet={responsive.desktop}
-            width={3000}
-            height={1684}
+            width={2188}
+            height={1023}
           />
           <source
             media="(min-width: 800px)"
             srcSet={responsive.tablet}
-            width={2000}
-            height={1481}
+            width={1535}
+            height={1023}
           />
           {/* Native img so <picture> art direction is not overridden by next/image */}
           <img
             alt={altText}
             src={responsive.phone}
-            width={1400}
-            height={1400}
+            width={1023}
+            height={1023}
             className="h-auto w-full"
             fetchPriority="high"
           />
