@@ -89,7 +89,8 @@ The Home Page provides a clear overview of the app’s main features. Users can 
       },
       {
         type: "image",
-        src: "/1-cactus ux/3.webp",
+        src: "/1-cactus ux/search-filters-v2.webp",
+        crisp: true,
         description: {
           title: "Search & Filters",
           paragraph: `
