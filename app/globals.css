@@ -25,3 +25,12 @@ body {
 body {
   font-family: var(--font-playfair-display) !important;
 }
+
+.site-nav,
+.site-nav ul,
+.site-nav li,
+.site-nav a,
+.site-nav div {
+  background-color: transparent !important;
+  background-image: none !important;
+}

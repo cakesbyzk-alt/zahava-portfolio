@@ -4,7 +4,9 @@ import { usePathname } from "next/navigation";
 export default function Nav() {
   const path = usePathname();
   return (
-    <nav className="bg-transparent px-10 py-8 text-sm font-medium tracking-tighter md:text-[18px] lg:px-12">
+    <nav
+      className="site-nav !bg-transparent bg-transparent px-10 py-8 pt-12 text-sm font-medium tracking-tighter sm:!bg-transparent sm:bg-transparent md:!bg-transparent md:bg-transparent md:pt-14 md:text-[18px] lg:!bg-transparent lg:bg-transparent lg:px-12 lg:py-8"
+      style={{ backgroundColor: "transparent" }}>
       <ul className="flex justify-between">
         <li className="italic">
           <Link href={"/"}>Zahava K.</Link>{" "}

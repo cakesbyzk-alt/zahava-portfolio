@@ -1,19 +1,22 @@
+import PngSequence from "../../components/PngSequence";
+
 export default function page() {
   return (
     <main className="flex w-full flex-1 items-center justify-center px-11 py-8 text-sm font-medium md:text-[20px] lg:text-[23px]">
       <div className="flex w-full flex-col items-center gap-8 md:flex-row md:gap-12 lg:gap-18">
         <div className="flex w-full justify-center md:w-1/2">
           <div className="w-full max-w-[300px] md:max-w-[400px] lg:max-w-[min(36vw,560px)]">
-            <video
-              src="/about.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload="auto"
-              aria-label="self-portrait of zahava, looking out of the window"
-              className="h-auto w-full object-contain md:max-h-[calc(100dvh-12rem)]"
-              style={{ display: "block" }}
+            <PngSequence
+              dir="/home-hero/about"
+              count={120}
+              width={1080}
+              height={1080}
+              cropTop={0.223}
+              cropBottom={0.159}
+              cropLeft={0.216}
+              cropRight={0.239}
+              label="self-portrait of zahava, looking out of the window"
+              className="h-auto w-full md:max-h-[calc(100dvh-12rem)]"
             />
           </div>
         </div>
