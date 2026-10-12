@@ -53,7 +53,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden font-medium">
       <header className="pt-2 md:pt-4">
-        <div className="mt-4 flex w-full flex-col items-center md:mt-8 md:px-15 lg:mt-[50px] lg:px-10">
+        <div className="mt-4 flex w-full flex-col items-center gap-[15px] md:mt-8 md:px-15 lg:mt-[50px] lg:px-10">
           <HomeHero />
           <HomeGreeting />
         </div>
