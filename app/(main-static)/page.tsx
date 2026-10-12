@@ -1,5 +1,6 @@
 import projectsData from "@/projectsData";
 import HomeGreeting from "../components/HomeGreeting";
+import HomeHero from "../components/HomeHero";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -53,36 +54,7 @@ export default function Home() {
     <div className="overflow-x-hidden font-medium">
       <header className="pt-2 md:pt-4">
         <div className="mt-4 flex w-full flex-col items-center md:mt-8 md:px-15 lg:mt-[50px] lg:px-10">
-          <div className="hidden w-full justify-center md:landscape:flex lg:flex">
-            <HomeHeroVideo
-              src="/home-desktop.mp4"
-              width={1920}
-              height={1080}
-              cropTop={0.14}
-              cropBottom={0.145}
-              reserve="11rem"
-            />
-          </div>
-          <div className="hidden w-full justify-center md:max-lg:portrait:flex">
-            <HomeHeroVideo
-              src="/home-tablet.mp4"
-              width={800}
-              height={916}
-              cropTop={0.07}
-              cropBottom={0.06}
-              reserve="12rem"
-            />
-          </div>
-          <div className="flex w-full justify-center md:hidden">
-            <HomeHeroVideo
-              src="/home-phone.mp4"
-              width={1080}
-              height={1920}
-              cropTop={0.14}
-              cropBottom={0.1}
-              reserve="13rem"
-            />
-          </div>
+          <HomeHero />
           <HomeGreeting />
         </div>
       </header>
@@ -101,45 +73,3 @@ export default function Home() {
   );
 }
 
-function HomeHeroVideo({
-  src,
-  width,
-  height,
-  cropTop,
-  cropBottom,
-  reserve = "11rem",
-}: {
-  src: string;
-  width: number;
-  height: number;
-  cropTop: number;
-  cropBottom: number;
-  reserve?: string;
-}) {
-  const visible = 1 - cropTop - cropBottom;
-
-  return (
-    <div
-      className="flex w-full max-w-[1400px] items-center justify-center overflow-hidden"
-      style={{ maxHeight: `calc(100svh - ${reserve})` }}>
-      <div
-        className="relative w-full shrink-0 overflow-hidden"
-        style={{ aspectRatio: `${width} / ${height * visible}` }}>
-        <video
-          src={src}
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          aria-hidden="true"
-          className="absolute left-0 w-full max-w-none"
-          style={{
-            top: `${-((cropTop / visible) * 100).toFixed(3)}%`,
-            height: `${(100 / visible).toFixed(3)}%`,
-          }}
-        />
-      </div>
-    </div>
-  );
-}
