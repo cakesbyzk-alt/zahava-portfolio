@@ -31,7 +31,7 @@ export default async function ProjectPage({
   return (
     <div
       className={
-        "min-h-screen bg-neutral-50 text-neutral-950" +
+        "min-h-[100dvh] bg-neutral-50 text-neutral-950" +
         " " +
         project.name
       }>
