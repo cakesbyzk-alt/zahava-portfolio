@@ -28,13 +28,18 @@ export default function ProjectNav({
   const disabledClasses =
     "pointer-events-none cursor-none text-gray-400";
   return (
-    <nav className="sticky top-0 z-20 w-full border-b-1 border-black bg-neutral-100 px-2 md:border-b-1 md:px-4">
+    <nav className="sticky top-0 z-20 w-full border-b-1 border-black bg-neutral-100/75 px-2 backdrop-blur-sm md:border-b-1 md:px-4">
       <ul className="m-auto grid w-full max-w-[1100px] grid-cols-3 justify-items-center p-5 px-3 text-base leading-none md:px-5 md:text-lg lg:text-xl xl:max-w-[85%] xl:px-0">
         <li
-          className={`flex items-center justify-self-start text-left ${!previousPage && disabledClasses}`}>
+          className={[
+            "flex items-center justify-self-start text-left",
+            !previousPage && disabledClasses,
+          ]
+            .filter(Boolean)
+            .join(" ")}>
           <Link
             aria-label="previous page"
-            aria-disabled={!previousPage}
+            aria-disabled={!previousPage ? true : undefined}
             href={previousPage || "#"}
             className="flex items-center gap-1.5 md:gap-2">
             <NavArrow direction="left" />
@@ -48,10 +53,15 @@ export default function ProjectNav({
         </li>
 
         <li
-          className={`flex items-center justify-self-end text-right ${!nextPage && disabledClasses}`}>
+          className={[
+            "flex items-center justify-self-end text-right",
+            !nextPage && disabledClasses,
+          ]
+            .filter(Boolean)
+            .join(" ")}>
           <Link
             aria-label="next page"
-            aria-disabled={!nextPage}
+            aria-disabled={!nextPage ? true : undefined}
             href={nextPage || "#"}
             className="flex items-center gap-1.5 md:gap-2">
             <span>next</span>

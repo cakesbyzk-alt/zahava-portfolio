@@ -23,6 +23,7 @@ export default async function ProjectPage({
       index={i}
       asset={asset}
       info={project.info}
+      isLast={i === project.assets.length - 1}
     />
   ));
   if (!project) notFound();
@@ -38,8 +39,10 @@ export default async function ProjectPage({
         nextPage={projectsData[projectIndex + 1]?.name}
         previousPage={projectsData[projectIndex - 1]?.name}
       />
-      <main className="m-auto max-w-[1100px] px-6 md:px-10 xl:max-w-[85%] xl:px-0">
-        <div className="py-4 md:py-7 lg:py-10">{assetsElements}</div>
+      <main className="m-auto max-w-[1100px] overflow-x-clip px-6 md:px-10 xl:max-w-[85%] xl:px-0">
+        <div className="pt-4 md:pt-7 lg:pt-10 pb-20 md:pb-40">
+          {assetsElements}
+        </div>
       </main>
     </div>
   );

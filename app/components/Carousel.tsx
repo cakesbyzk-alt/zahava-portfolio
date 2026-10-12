@@ -7,12 +7,14 @@ interface CarouselProps {
   images: string[];
   alt: string;
   interval?: number;
+  crisp?: boolean;
 }
 
 export default function Carousel({
   images,
   alt,
   interval = 3000,
+  crisp = false,
 }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -35,10 +37,22 @@ export default function Carousel({
           <Image
             src={src}
             alt={`${alt} - view ${i + 1}`}
-            width={1920}
-            height={1080}
+            width={crisp ? 4700 : 1920}
+            height={crisp ? 2628 : 1080}
             priority={i === 0}
             className="h-auto w-full"
+            quality={100}
+            sizes="100vw"
+            unoptimized={crisp}
+            style={
+              crisp
+                ? {
+                    imageRendering: "-webkit-optimize-contrast",
+                    width: "100%",
+                    height: "auto",
+                  }
+                : undefined
+            }
           />
         </div>
       ))}

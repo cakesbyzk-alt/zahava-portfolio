@@ -2,7 +2,7 @@
 
 @theme {
   --color-purple-dark: #4b03a5;
-  --color-purple-light: #c0a4e4;
+  --color-purple-light: #dbc4fe;
   --breakpoint-md: 800px;
   --breakpoint-lg: 1280px;
   --breakpoint-xl: 1480px;
@@ -18,7 +18,7 @@ html {
 
 html,
 body {
-  background-color: #c0a4e4;
+  background-color: #dbc4fe;
   min-height: 100vh;
 }
 
