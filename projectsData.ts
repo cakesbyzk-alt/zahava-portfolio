@@ -99,7 +99,7 @@ const projectsData: Project[] = [
       course: "Startup, UX/UI",
       instructor: "Nomi Gelbach",
       partner: "Elya Asulin",
-      skills: "Design System, Prototype",
+      skills: "UX/UI, User Research, Design System, Prototyping",
     },
     assets: [
       {
@@ -112,7 +112,7 @@ const projectsData: Project[] = [
         },
         info: true,
         description: {
-          title: "Cactus UX UI",
+          title: "Cactus UX/UI",
           paragraph:
             "Cactus is a UX/UI project focused on planning road trips around educational experiences. It combines route planning with curated learning stops, making it simple for families to build journeys that are both practical and meaningful.",
         },
@@ -278,8 +278,7 @@ The social media design carries the structured and architectural themes of the p
     info: {
       course: "Branding Introduction",
       instructor: "Adlai Stock",
-      skills:
-        "Product & Package Design, Typography, Branding, Copywriting",
+      skills: "Product & Package Design, Branding, Copywriting",
     },
     assets: [
       {
@@ -384,7 +383,7 @@ Each lightbox uses layered cutouts and soft light to create depth within a small
     info: {
       course: "Children’s Book Illustration & Design",
       instructor: "Limor Snorchemer, Ada Vardi",
-      skills: "Illustration, Typography, Layout, Storytelling, Character Design",
+      skills: "Illustration, Layout, Character Design",
     },
     assets: [
       {
@@ -401,7 +400,7 @@ Each lightbox uses layered cutouts and soft light to create depth within a small
         src: "/7-illustration gallery/pini-storyboard.webp",
         description: {
           title: "Sketches",
-          paragraph: `The process began by dividing the text into pages and placing them using a structured grid. I then added initial sketches to test the composition of time, ensuring the illustrations worked seamlessly one after another. After refining the storyboard over a few rounds, I moved on to character development and f\u200Cinal illustrations.`,
+          paragraph: `The process began by dividing the text into pages and placing them using a structured grid. I then added initial sketches to test the composition over time, ensuring the illustrations worked seamlessly one after another. After refining the storyboard over a few rounds, I moved on to character development and f\u200Cinal illustrations.`,
         },
       },
       {
@@ -538,7 +537,7 @@ into documentation.          `,
     info: {
       course: "Final Project",
       instructors: "Renana Irshi, Nir Shaked",
-      skills: "Speculative Design, Deep Research, Spatial Design, UX/UI, Creative Coding",
+      skills: "Deep Research, Spatial Design, UX/UI, Creative Coding",
     },
     assets: [
       {
@@ -722,8 +721,8 @@ A 3-still retelling of The Three Little Pigs created in Cinema 4D, reimagining t
     ],
   },
   {
-    title: "08 / Animation Gallery / Animation  / 2022- 2025",
-    name: "Animation Gallery",
+    title: "08 / Motion Gallery / Animation  / 2022- 2025",
+    name: "Motion Gallery",
     menu: {
       thumb: "/menu/motion.webp",
       caption: "Motion Gallery",
@@ -733,7 +732,7 @@ A 3-still retelling of The Three Little Pigs created in Cinema 4D, reimagining t
         type: "video",
         src: "/animations/map.mp4",
         description: {
-          title: "Animation Gallery",
+          title: "Motion Gallery",
           paragraph:
             "Motion work from different stages of my degree, including projects made for branding alongside short clips focused on simple storytelling. The collection reflects an ongoing exploration of form, pacing, and visual structure across contexts.",
         },

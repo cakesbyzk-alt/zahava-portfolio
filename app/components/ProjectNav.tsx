@@ -18,6 +18,10 @@ function NavArrow({ direction }: { direction: "left" | "right" }) {
   );
 }
 
+function projectHref(name: string) {
+  return `/${encodeURIComponent(name)}`;
+}
+
 export default function ProjectNav({
   nextPage,
   previousPage,
@@ -40,7 +44,7 @@ export default function ProjectNav({
           <Link
             aria-label="previous page"
             aria-disabled={!previousPage ? true : undefined}
-            href={previousPage || "#"}
+            href={previousPage ? projectHref(previousPage) : "#"}
             className="flex items-center gap-1.5 md:gap-2">
             <NavArrow direction="left" />
             <span>previous</span>
@@ -62,7 +66,7 @@ export default function ProjectNav({
           <Link
             aria-label="next page"
             aria-disabled={!nextPage ? true : undefined}
-            href={nextPage || "#"}
+            href={nextPage ? projectHref(nextPage) : "#"}
             className="flex items-center gap-1.5 md:gap-2">
             <span>next</span>
             <NavArrow direction="right" />
