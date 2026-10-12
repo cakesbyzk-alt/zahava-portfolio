@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 export default function Nav() {
   const path = usePathname();
   return (
-    <nav className="sticky top-0 z-50 bg-transparent px-10 py-8 text-sm font-medium tracking-tighter md:text-[18px] lg:px-12">
+    <nav className="bg-transparent px-10 py-8 text-sm font-medium tracking-tighter md:text-[18px] lg:px-12">
       <ul className="flex justify-between">
         <li className="italic">
           <Link href={"/"}>Zahava K.</Link>{" "}
